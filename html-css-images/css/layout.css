@@ -1,0 +1,318 @@
+/* Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+body {
+ line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+ display:block;
+}
+nav ul {
+ list-style:none;
+}
+blockquote, q {
+ quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+a {
+ margin:0;
+ padding:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+ background-color:#ff9;
+ color:#000;
+ text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+ background-color:#ff9;
+ color:#000; 
+ font-style:italic;
+ font-weight:bold;
+}
+del {
+ text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+ border-bottom:1px dotted;
+ cursor:help;
+}
+/* change border colour to suit your needs */
+hr {
+ display:block;
+ height:1px;
+ border:0; 
+ border-top:1px solid #cccccc;
+ margin:1em 0;
+ padding:0;
+}
+input, select {
+ vertical-align:middle;
+}
+
+/* End Reset */
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%; /* equivalente a 10px */
+}
+
+body {
+	background-color: white;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+article h2 {
+  color:#006437
+}
+
+article ol {
+  color:#006437;
+  font-size: 1.2rem;
+}
+
+article p {
+  color: #006437;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #006437;
+}
+
+form {
+	background: #eee;
+	padding: 10px;
+}
+
+form div {
+	background: #fff;
+	border-bottom: 1px solid #006437;
+	margin: 1rem;
+	padding: 2rem;
+}
+
+label {
+	margin-bottom: 1rem;
+	font-size: 1.4rem; 
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #006437;
+}
+
+input {
+	padding: 1rem;
+}
+
+[type="text"], [type="email"], textarea, label {
+	display: block;
+	width: 100%;
+}
+
+header {
+  background-color:#006437;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #006437;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+#homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 190px;
+}
+
+.centralizar-conteudo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.imagens {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+.imagens div {
+  width: 30%;
+  text-align: center;
+}
+
+.imagens img {
+  width: 50%;
+  height: auto;
+  margin: -10% 20%;
+}
+
+.texto-centralizado {
+  margin: 20px auto;
+  text-align: center;
+  color: #006437;
+}
+
+#palmeiras{
+  width: 100%;
+}
+
+#text-palmeiras{
+  color: #006437;
+  width: 100%;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.letra-menor{
+  font-size: .5em;
+}
+
+.navegacao {
+	background-color: white;
+	padding: 0.5rem;
+}
+
+.navegacao li a {
+	color: #008c8c;
+	font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.navegacao li a:hover {
+	background-color: #016868;
+	color: #ffffff;
+}
+
+article#homepage {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#contato {
+  color: #006437;
+}
+
+iframe {
+  margin-top: 2%;
+  width: 100%;
+}
+
+.filtro:hover {
+  filter: grayscale(40%) ;
+}
+
+.filtro {
+  filter: drop-shadow(5px 5px 5px #006437)
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.videos iframe {
+  margin: 10px;
+}
+
+@media (max-width: 1024px) {
+  nav, article {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  nav, article {
+    width: 85%;
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
